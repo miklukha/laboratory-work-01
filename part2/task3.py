@@ -1,3 +1,11 @@
+# Create a class that descibes a Product of online store.
+# As a Product fields you can use a price, description and product' dimensions.
+# Create a class that describes a Customer.
+# As a Customer fields you can use surname, name, patronymic, mobile phone, etc.
+# Create a class that describes an Order.
+# - the order must contain data about the customer who carried it out and products.
+#   Implement a method for calculating the total order value.
+
 class Product:
     def __init__(self, name, price, description):
         self.name = name

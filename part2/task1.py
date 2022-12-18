@@ -1,3 +1,8 @@
+# Create a class Rectangle with attributes length and width, each of which defaults to 1.
+# Provide methods that calculate the perimeter and the area of the instantiation.
+# Also, provide setter and getter for the length and width attributes.
+# The setter should verify that length and width are each floating-point numbers larger than 0.0 and less than 20.0.
+
 class Rectangle:
     def __init__(self, length=1.0, width=1.0):
         self.length = length
