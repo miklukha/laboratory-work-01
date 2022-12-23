@@ -15,14 +15,15 @@ class Rational:
     def __init__(self, a=0, b=0):
         self.a = a
         self.b = b
+        self.rational = {"numerator": 1, "denominator": 1}
 
     def fractional_format(self):
         self.count_divider()
 
-        fractionated_a = self.a // self.divider
-        fractionated_b = self.b // self.divider
+        self.rational["numerator"] = self.a // self.divider
+        self.rational["denominator"] = self.b // self.divider
 
-        return str(fractionated_a) + "/" + str(fractionated_b)
+        return str(self.rational["numerator"]) + "/" + str(self.rational["denominator"])
 
     def floating_point_format(self):
         quotient = self.a/self.b
