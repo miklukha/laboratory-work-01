@@ -1,6 +1,7 @@
 import unittest
 from part2.task2 import task2
 
+
 class TestFractions(unittest.TestCase):
     def test_01(self):
         test_01 = task2.Rational(2, 4)

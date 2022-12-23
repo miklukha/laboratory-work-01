@@ -9,6 +9,9 @@
 # - printing Rational numbers in the form a/b, where a is the numerator and b is the denominator.
 # - printing Rational numbers in floating-point format.
 
+import math
+
+
 class Rational:
     divider = 1
 
@@ -30,19 +33,5 @@ class Rational:
         return f"{quotient:.2}"
 
     def count_divider(self):
-        self.divider = self.find_GCD(self.a, self.b)
+        self.divider = math.gcd(self.a, self.b)
 
-    def find_GCD(self, a, b):
-        temp = 1
-
-        if a < 0:
-            a *= 1
-        elif b < 0:
-            b *= -1
-
-        while b > 0:
-            temp = b
-            b = a % temp
-            a = temp
-
-        return temp
